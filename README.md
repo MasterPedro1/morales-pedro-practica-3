@@ -11,9 +11,11 @@ Link repositorio de la práctica
 
 [Practica4](https://github.com/MasterPedro1/Project-Astro)
 
-Link página de Netlify
+Link página de Netlify y Vercel
 
-[Pagina](https://6271c605894c4517039028cf--admirable-caramel-a2fa85.netlify.app/)
+[Netlify](https://6271c605894c4517039028cf--admirable-caramel-a2fa85.netlify.app/)
+
+[Vercel](https://project-astro.vercel.app/)
 
 ## Codigos para iniciar el repositorio
 
