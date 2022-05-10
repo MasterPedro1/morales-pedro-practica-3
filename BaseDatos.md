@@ -47,10 +47,8 @@
 
 ### Location
 
-- México
-- EUA
-- Perú
-- Haití
+- Country ID
+- Country Name
 
 ## Relaciones
 
@@ -59,4 +57,12 @@
 3. Los _Posts_ tiene _Like / Dislike_ (1-M)
 4. Los _Users_ chatean con otros _Users_ (1-M)
 
+## Catálogo 
 
+- México
+- EUA
+- Perú
+- Haití
+
+
+[Regresar](/README.md)
