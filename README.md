@@ -17,6 +17,10 @@ Link página de Netlify y Vercel
 
 [Vercel](https://project-astro.vercel.app/)
 
+## Práctica 6,7 y 8
+
+[Base de datos](/BaseDatos.md)
+
 ## Codigos para iniciar el repositorio
 
 - mkdir carpeta
@@ -33,3 +37,5 @@ Link página de Netlify y Vercel
 - **git push -u origin main** (si es la primera vez que lo vinculamos)
 - **git push** (para subir los siguientes cambios)
 
+
+[Refresar](/README.md)
