@@ -12,43 +12,45 @@
 ## Atributos
 
 ### Users
-- Name
+- Name (PK)
 - Furry Name
-- Height
-- Weight
+- Height (UQ)
+- Weight (UQ)
 - Photo
-- Genre
-- Location
-- Phone
+- Genre 
+- Location (FK)
+- Phone (UQ)
 - Birthdate
 - Furry suit
 
 ### Posts
 
+- User (FK)
 - Photo
+- Post ID (PK)
 - Date
 - Location
 - Furry Name
-- Furry Suit
+- Furry Suit (UQ) 
 
 ### Like / Dislike
 
-- ID
-- Post ID
+- ID (PK)
+- Post ID (FK)
 - Date
 
 ### Chat
 
-- Users Furry Name
-- Chat
+- Users Furry Name (FK)
+- Chat (PK)
 - Chat Date
 - Emoji
 - Photos
 
 ### Location
 
-- Country ID
-- Country Name
+- Country ID (PK)
+- Country Name (FK)
 
 ## Relaciones
 

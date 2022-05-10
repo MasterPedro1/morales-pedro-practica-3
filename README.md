@@ -38,4 +38,3 @@ Link página de Netlify y Vercel
 - **git push** (para subir los siguientes cambios)
 
 
-[Refresar](/README.md)
