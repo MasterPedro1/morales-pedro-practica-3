@@ -3,19 +3,18 @@
 ## Entidades
 
 1. Users
-2. Posts
-3. Like / Dislike
-5. Chat
-6. Location
+2. Like / Dislike
+3. Chat
+4. Location
 
 
 ## Atributos
 
 ### Users
-- Name (PK)
-- Furry Name
-- Height (UQ)
-- Weight (UQ)
+- Name 
+- Furry Name (PK)
+- Height 
+- Weight 
 - Photo
 - Genre 
 - Location (FK)
@@ -23,29 +22,21 @@
 - Birthdate
 - Furry suit
 
-### Posts
 
-- User (FK)
-- Photo
-- Post ID (PK)
-- Post (FK)
-- Date
-- Location
-- Furry Name
-- Furry Suit (UQ) 
 
 ### Like / Dislike
 
 - ID (PK)
 - Post ID (FK)
 - Date
+- Like / Dislike given
+- Like / Dislike recibe
 
 ### Chat
 
-- Users Furry Name (FK)
+- Furry Name (FK)
 - Chat (PK)
 - Chat Date
-- Emoji
 - Photos
 
 ### Location
