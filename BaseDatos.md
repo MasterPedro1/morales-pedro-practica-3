@@ -28,6 +28,7 @@
 - User (FK)
 - Photo
 - Post ID (PK)
+- Post (FK)
 - Date
 - Location
 - Furry Name
@@ -58,6 +59,7 @@
 2. Los _Users_ dan _Like / Dislike_ (1-M)
 3. Los _Posts_ tiene _Like / Dislike_ (1-M)
 4. Los _Users_ chatean con otros _Users_ (1-M)
+5. Los _Users_ tiene _Location_(1-1)
 
 ## Catálogo 
 
