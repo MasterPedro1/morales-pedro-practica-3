@@ -46,7 +46,7 @@
 
 ## Relaciones
 
-1. Los _Users_ publican _Posts_   (1-M)
+1. Los _Users_ ven otro _Users_  (1-M)
 2. Los _Users_ dan _Like / Dislike_ (1-M)
 3. Los _Posts_ tiene _Like / Dislike_ (1-M)
 4. Los _Users_ chatean con otros _Users_ (1-M)
