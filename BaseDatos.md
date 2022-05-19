@@ -62,7 +62,7 @@
 
 # Modelo Relación
 
-![Modelo](Multimedia/Modelo_Relacion.png)
+![Modelo](Multimedia/Modele_Relacion.png)
 
 [Regresar](/morales-pedro-practica-3/README.md)
 
