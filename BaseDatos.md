@@ -60,4 +60,8 @@
 - Haití
 
 
+# Modelo Relación
+
+![Modelo](/morales-pedro-practica-3/Multimedia/Modelo_Relaci%C3%B3n.png)
+
 [Regresar](/morales-pedro-practica-3/README.md)
