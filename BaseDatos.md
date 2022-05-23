@@ -95,3 +95,7 @@
 1. Crear Location
 2. Leer todos las Location
 3. Actualizar location
+
+## Corrida de Datos
+
+[Enlace](/morales-pedro-practica-3/Corrida_de_Datos.xlsx)
