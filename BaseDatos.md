@@ -2,7 +2,7 @@
 
 ## Entidades
 
-1. Users
+1. Profile
 2. Like / Dislike
 3. Chat
 4. Location
@@ -10,34 +10,39 @@
 
 ## Atributos
 
-### Users
-- Name 
+### Profile
 - Furry Name (PK)
 - Height 
 - Weight 
-- Photo
+- Avatar
 - Genre 
 - Location (FK)
 - Phone (UQ)
-- Birthdate
-- Furry suit
+- E-mail (UQ)
+- Password
 
 
 
 ### Like / Dislike
 
-- ID (PK)
-- Post ID (FK)
+- Like/Dislike ID (PK)
+- Profile ID (FK)
 - Date
-- Like / Dislike given
-- Like / Dislike recibe
+- Other Profile ID (FK)
+
+### Like Approve
+- Like Approve ID
+- Date
+- Profile ID (FK)
+- Other Profile ID (FK)
 
 ### Chat
 
-- Furry Name (FK)
-- Chat (PK)
+- Chat ID (PK)
+- Profile ID (FK)
+- Photo
 - Chat Date
-- Photos
+- Chat
 
 ### Location
 
@@ -46,11 +51,11 @@
 
 ## Relaciones
 
-1. Los _Users_ ven otro _Users_  (1-M)
-2. Los _Users_ dan _Like / Dislike_ (1-M)
+1. Los _Profile_ ven otro _Profile_  (1-M)
+2. Los _Profile_ dan _Like / Dislike_ (1-M)
 3. Los _Posts_ tiene _Like / Dislike_ (1-M)
-4. Los _Users_ chatean con otros _Users_ (1-M)
-5. Los _Users_ tiene _Location_(1-1)
+4. Los _Profile_ chatean con otros _Users_ (1-M)
+5. Los _Profile_ tienen _Location_(1-1)
 
 ## Catálogo 
 
@@ -67,3 +72,26 @@
 [Regresar](/morales-pedro-practica-3/README.md)
 
 
+## Reglas de Negocio
+
+### Profile
+
+1. Crear perfil
+2. Ver perfiles
+3. Editar perfil
+4. Eliminar perfil
+
+### Like / Dislike
+
+1. Crear Like / Dislike de Profile en otro Profile
+2. Eliminar Like / Dislike de Profile en otro Profile
+
+### Like Approve
+
+1. Crear Like de un Profile y Otro Profile
+
+### Location
+
+1. Crear Location
+2. Leer todos las Location
+3. Actualizar location
