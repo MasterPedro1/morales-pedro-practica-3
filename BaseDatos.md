@@ -98,4 +98,4 @@
 
 ## Corrida de Datos
 
-[Enlace](/morales-pedro-practica-3/Corrida_de_Datos.xlsx)
+[Enlace](https://github.com/MasterPedro1/morales-pedro-practica-3/blob/main/Corrida_de_Datos.xlsx)
