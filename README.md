@@ -21,6 +21,10 @@ Link página de Netlify y Vercel
 
 [Base de datos](/BaseDatos.md)
 
+## Base de datos sql
+
+[SQL](https://github.com/MasterPedro1/morales-pedro-practica-3/blob/main/Furrynder_schema.sql)
+
 ## Codigos para iniciar el repositorio
 
 - mkdir carpeta
