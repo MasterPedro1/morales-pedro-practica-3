@@ -17,7 +17,7 @@ Link página de Netlify y Vercel
 
 [Vercel](https://project-astro.vercel.app/)
 
-## Práctica 6, 7 y 8
+## Práctica 6, cd7 y 8
 
 [Base de datos](/BaseDatos.md)
 
