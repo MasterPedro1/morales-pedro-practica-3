@@ -11,21 +11,21 @@ INSERT INTO Locations (Location_id, Location_name) VALUES
 (1, 'México'),
 (2, 'Haití'),
 (3, 'EUA'),
-(4, 'Perú');}
+(4, 'Perú');
 
 CREATE TABLE Profile(
-Profile_id VARCHAR(50) PRIMARY KEY,
+Profile_id VARCHAR(50) NOT NULL PRIMARY KEY,
 Height FLOAT,
 Weight FLOAT,
 Avatar VARCHAR(255),
-Genre_ENUM('Hombre', 'Mujer', 'Otro'),
-Birthdate DATE,BIGINT,
+Genre ENUM('Hombre', 'Mujer', 'Otro'),
+Birthdate DATE,
 email VARCHAR(50) UNIQUE NOT NULL,
 password VARCHAR(255) NOT NULL,
 phone VARCHAR(20) UNIQUE NOT NULL,
-Location INTEGER UNSIGNED,
+Location INTEGER UNSIGNED NOT NULL,
 FOREIGN KEY (Location)
-REFERENCES Locations(Location_id)
+REFERENCES Location(Location_id)
 ON DELETE RESTRICT
 ON UPDATE CASCADE
 ) Engine=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -57,8 +57,9 @@ ON UPDATE CASCADE
 
 
 CREATE TABLE Chat(
+Chat_date DATETIME NOT NULL,
 Chat_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-Photo VARCHAR(255) NOT NULL,
+Photo VARCHAR(255),
 Chat TEXT,
 Other_Profile_id VARCHAR(50) NOT NULL,
 Profile_id VARCHAR(50) NOT NULL,
