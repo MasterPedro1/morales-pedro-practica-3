@@ -1,16 +1,16 @@
-INSERT INTO Locations (Location_name) VALUES ("México"), ("Haití"), ("EUA"), ("Perú");
+INSERT INTO Location (Location_name) VALUES ("México"), ("Haití"), ("EUA"), ("Perú");
 
-INSERT INTO Locations (Location_name) VALUES ("Afganistan");
+INSERT INTO Location (Location_name) VALUES ("Afganistan");
 
-SELECT * FROM Locations;
+SELECT * FROM Location;
 
-SELECT * FROM Locations WHERE Location_name = "México"
+SELECT * FROM Location WHERE Location_name = "México"
 
-UPDATE Locations SET Location_name = "México" WHERE Location_id = 1;
+UPDATE Location SET Location_name = "México" WHERE Location_id = 1;
 
-DELETE FROM Locations WHERE Location_id = 4;
+DELETE FROM Location WHERE Location_id = 4;
 
-INSERT INTO Profile (Profile_id, email, password, phone, Location) VALUES
+INSERT INTO Profile (Profile_id, email, password, phone, Locations) VALUES
 ('@ValdomeroCaramelo', 'valdomeroelcara@gmail.com', SHA1('dcklover'), '55762938', 1);
 
 SELECT * FROM Profile;
@@ -26,37 +26,42 @@ WHERE (Profile_id = '@ValdomeroCaramelo' OR email = 'valdomeroelcara@gmail.com' 
 
 UPDATE Profile
   SET
-    avatar = "Nester.jpg", 
-    birthdate = "1999-04-09",
+    avatar = "Alamelsabio.jpg", 
+    birthdate = "2000-10-11",
     genre = "Hombre"
 
-  WHERE Profile_id = "@ValdomeroCaramelo";
+  WHERE Profile_id = "@AlamMask";
 
 /* 1. Actualizar _password_ de _user_. */
 UPDATE profile
-  SET password = SHA1("new password")
+  SET password = SHA1("newpassword")
   WHERE Profile_id = "@ValdomeroCaramelo";
 
 /* 1. Eliminar _user_. */
-DELETE FROM users
-  WHERE user = '@ValdomeroCaramelo';
+DELETE FROM Profile
+  WHERE Profile_id = '@ValdomeroCaramelo';
 
-INSERT INTO Profile ( Profile_id,email, phone, password )
+INSERT INTO Profile ( Profile_id ,email, phone, password, Locations )
   VALUES
-    ( '@TobiesUWU', 'tobibobi@gmail.com',"5512345679", SHA1('pssylover') ),
-    ( '@Carle', 'lolqueasco@gmail.com', "5518619679",SHA1('eduveteya') ),
-    ( '@RIKUINU', 'teamopedre2@gmail.com', "5512345670",SHA1('Tobies34') ),
-    ( '@AlamMask', 'elsinpumones@gmail.com', "5512345677",SHA1('lasoplas') );
+    ( '@TobiesUWU', 'tobibobi@gmail.com',"5512345679", SHA1('pssylover'), 1),
+    ( '@Carle', 'lolqueasco@gmail.com', "5518619679",SHA1('eduveteya'), 2),
+    ( '@RIKUINU', 'teamopedre2@gmail.com', "5512345670",SHA1('Tobies34'), 3),
+    ( '@AlamMask', 'elsinpumones@gmail.com', "5512345677",SHA1('lasoplas'), 1);
 
 /* Follows */
 
 /* Crear follow de un user */
 INSERT INTO LikeDislike ( LikeDislike_date, Profile_id, Other_Profile_id)
-  VALUES
+VALUES
     ( NOW(), '@ValdomeroCaramelo', '@AlamMask' ),
     ( NOW(), '@RIKUINU', '@ValdomeroCaramelo' ),
     ( NOW(), '@AlamMask', '@ValdomeroCaramelo' ),
-    ( NOW(), '@RIKUINU', '@AlamMask' );
+    ( NOW(), '@RIKUINU', '@AlamMask' ),
+    ( NOW(), '@RIKUINU', '@Carle' ),
+    ( NOW(), '@Carle', '@AlamMask' ),
+    ( NOW(), '@AlamMask', '@RIKUINU' ),
+    ( NOW(), '@TobiesUWU', '@Carle' ),
+    ( NOW(), '@Carle', '@TobiesUWU' );
 
 SELECT COUNT(*) as likesdislikes FROM LikeDislike
   WHERE Profile_id = 1;
@@ -69,7 +74,9 @@ SELECT COUNT(*) as likesdislikes FROM LikeDislike
 INSERT INTO Like_Approve ( Like_Approve_date, Profile_id, Other_Profile_id )
   VALUES
     ( NOW(), '@AlamMask', '@ValdomeroCaramelo' ),
-    ( NOW(), '@ValdomeroCaramelo', '@AlamMask' );
+    ( NOW(), '@ValdomeroCaramelo', '@AlamMask' ),
+    ( NOW(), '@TobiesUWU', '@Carle' ),
+    ( NOW(), '@Carle', '@TobiesUWU' );
 
 SELECT COUNT(*) as likesdislikes FROM LikeDislike
 WHERE Profile_id = 1;

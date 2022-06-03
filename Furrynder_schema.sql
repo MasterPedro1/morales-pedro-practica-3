@@ -2,12 +2,12 @@ CREATE DATABASE IF NOT EXISTS Furrynder;
 
 USE Furrynder;
 
-CREATE TABLE Locations(
+CREATE TABLE Location(
 Location_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 Location_name VARCHAR(255) NOT NULL
 ) Engine=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO Locations (Location_id, Location_name) VALUES
+INSERT INTO Location (Location_id, Location_name) VALUES
 (1, 'México'),
 (2, 'Haití'),
 (3, 'EUA'),
@@ -23,8 +23,8 @@ Birthdate DATE,
 email VARCHAR(50) UNIQUE NOT NULL,
 password VARCHAR(255) NOT NULL,
 phone VARCHAR(20) UNIQUE NOT NULL,
-Location INTEGER UNSIGNED NOT NULL,
-FOREIGN KEY (Location)
+Locations INTEGER UNSIGNED NOT NULL,
+FOREIGN KEY (Locations)
 REFERENCES Location(Location_id)
 ON DELETE RESTRICT
 ON UPDATE CASCADE
