@@ -54,7 +54,7 @@
 
 1. Los _Profile_ ven otro _Profile_  (1-M)
 2. Los _Profile_ dan _Like / Dislike_ (1-M)
-3. Los _Posts_ tiene _Like / Dislike_ (1-M)
+3. Los _Profile_ tiene _Like / Dislike_ (1-M)
 4. Los _Profile_ chatean con otros _Users_ (1-M)
 5. Los _Profile_ tienen _Location_(1-1)
 
