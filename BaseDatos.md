@@ -68,7 +68,7 @@
 
 # Modelo Relación
 
-![Modelo](Multimedia/Modele_Relacion.png)
+![Modelo](Multimedia/LaNueva.png)
 
 [Regresar](/morales-pedro-practica-3/README.md)
 
