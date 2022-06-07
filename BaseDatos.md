@@ -11,16 +11,16 @@
 ## Atributos
 
 ### Profile
-- Furry Name (PK)
+- Profile_id (PK)
 - Height 
 - Weight 
 - Avatar
 - Genre 
+- Birthdate
 - Location (FK)
 - Phone (UQ)
 - E-mail (UQ)
 - Password
-
 
 
 ### Like / Dislike
@@ -40,6 +40,7 @@
 
 - Chat ID (PK)
 - Profile ID (FK)
+- Other Profile ID
 - Photo
 - Chat Date
 - Chat

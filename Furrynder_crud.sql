@@ -61,7 +61,8 @@ VALUES
     ( NOW(), '@Carle', '@AlamMask' ),
     ( NOW(), '@AlamMask', '@RIKUINU' ),
     ( NOW(), '@TobiesUWU', '@Carle' ),
-    ( NOW(), '@Carle', '@TobiesUWU' );
+    ( NOW(), '@Carle', '@TobiesUWU' ),
+    ( NOW(), '@ValdomeroCaramelo', '@RIKUINU' );
 
 SELECT COUNT(*) as likesdislikes FROM LikeDislike
   WHERE Profile_id = 1;
@@ -76,7 +77,10 @@ INSERT INTO Like_Approve ( Like_Approve_date, Profile_id, Other_Profile_id )
     ( NOW(), '@AlamMask', '@ValdomeroCaramelo' ),
     ( NOW(), '@ValdomeroCaramelo', '@AlamMask' ),
     ( NOW(), '@TobiesUWU', '@Carle' ),
-    ( NOW(), '@Carle', '@TobiesUWU' );
+    ( NOW(), '@Carle', '@TobiesUWU' ),
+    ( Now(), '@RIKUINU', '@ValdomeroCaramelo'),
+    ( Now(), '@ValdomeroCaramelo', '@RIKUINU'),
+
 
 SELECT COUNT(*) as likesdislikes FROM LikeDislike
 WHERE Profile_id = 1;
@@ -90,7 +94,10 @@ DELETE FROM Like_Approve
 INSERT INTO Chat (Chat_date, chat, Profile_id, Other_Profile_id )
   VALUES
     ( NOW(), 'Pa cuando pa',  '@AlamMask', '@ValdomeroCaramelo' ),
-    ( NOW(), 'Pa pronto mi todo tibiaso', '@ValdomeroCaramelo', '@AlamMask' );
+    ( NOW(), 'Pa pronto mi todo tibiaso', '@ValdomeroCaramelo', '@AlamMask' ),
+    ( NOW(), 'Ya va siendo hora', '@ValdomeroCaramelo', '@AlamMask'),
+    ( NOW(), 'Hola cómo estas', '@RIKUINU', '@ValdomeroCaramelo'),
+    ( NOW(), 'Contestame porfavor', '@RIKUINU', '@ValdomeroCaramelo');
     
 SELECT COUNT(*) as chats FROM Chat
 WHERE Profile_id = 1;
